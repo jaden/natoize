@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NATO Alphabet Converter</title>
+  <link rel="stylesheet" href="assets/css/bulma-0.9.0.min.css">
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+
+    @media screen and (min-width: 1068px) {
+      .container {
+        max-width: 600px;
+        width: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section id="app" class="section" v-cloak>
+
+    <div class="container">
+
+      <h1 class="title">NATO Alphabet Converter</h1>
+
+      <div class="field">
+        <label class="label is-uppercase">String to convert</label>
+      </div>
+
+      <div class="field">
+        <div class="control is-expanded">
+          <input class="input" type="text" placeholder="The string to be converted" v-model="inputString">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label is-uppercase">NATO alphabet string</label>
+      </div>
+
+      <div class="field">
+        <div v-html="convertedString" id="converted-string" class="box has-text-centered"></div>
+      </div>
+
+      <div class="field is-clearfix">
+        <a class="button is-large is-light is-pulled-right" id="clipboard-button" data-clipboard-target="#converted-string" title="Copy to clipboard">
+          <img src="assets/img/clippy.svg" height="36" width="36">
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Built by <a href="https://dan.hersam.com">Dan Hersam</a> | <a href="https://github.com/jaden/natoize">Source on GitHub</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vue-2.6.11.min.js"></script>
+  <script src="assets/js/clipboard-2.0.6.min.js"></script>
+  <script src="natoize.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
