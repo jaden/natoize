@@ -94,6 +94,21 @@ const map = {
 	'/': 'forward_slash',
 	'?': 'question_mark',
 	' ': 'space',
+	'£': 'pound',
+	'€': 'euro',
+	'¥': 'yen',
+	'¢': 'cent',
+	'©': 'copyright',
+	'®': 'registered sign',
+	'™': 'trademark',
+	'¿': 'inverted_question',
+	'¡': 'inverted_exclamation',
+	'÷': 'division',
+	'×': 'multiplication',
+	'¦': 'broken_bar',
+	'§': 'section',
+	'¶': 'pilcrow',
+	'°': 'degree',
 };
 
 function natoize(str) {
@@ -103,7 +118,7 @@ function natoize(str) {
     const char = str.charAt(i);
 
     if (!(char in map)) {
-      nato.push(`${char} not found in map`);
+      nato.push(`I don't recognize this character: '${char}'`);
       continue;
     }
 
