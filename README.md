@@ -8,3 +8,11 @@ A simple way to make phrases (especially passwords) easier to communicate when s
 
 * Enter the phrase to be converted
 * Witness the wonder of NATO alphabet conversion before your very eyes.
+
+Try out the [NATO Alphabet Converter](https://natoize.danhersam.com/).
+
+## Interpreting the letters
+
+Letters are all lowercase or uppercase to indicate a lowercase or capital letter. For example, whiskey = w, WHISKEY = W.
+
+Numbers and named characters start with a capital letter to distinguish them from normal letters. For example, Three = 3, Dollar = $.
