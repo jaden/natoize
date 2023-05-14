@@ -1,9 +1,10 @@
 new ClipboardJS('#clipboard-button');
 
-new Vue({
-  el: '#app',
-  data: {
-    inputString: 'wtf',
+const app = Vue.createApp({
+  data() {
+    return {
+      inputString: 'wtf',
+    };
   },
 
   mounted: function () {
@@ -26,3 +27,5 @@ new Vue({
     },
   }
 });
+
+app.mount('#app');
