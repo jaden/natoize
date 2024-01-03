@@ -60,7 +60,7 @@ const map = {
   '6': 'Six',
   '7': 'Seven',
   '8': 'Eight',
-  '9': 'Nine',
+  '9': 'Niner',
   '`': 'Backtick',
   '~': 'Tilde',
   '!': 'Exclamation',
