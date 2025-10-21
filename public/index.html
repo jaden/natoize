@@ -40,17 +40,17 @@
       <h1 class="title">NATO Alphabet Converter</h1>
 
       <div class="field">
-        <label class="label is-uppercase">String to convert</label>
+        <label class="label is-uppercase" for="input-string">String to convert</label>
       </div>
 
       <div class="field">
         <div class="control is-expanded">
-          <input class="input" type="text" placeholder="The string to be converted" v-model="inputString">
+          <input class="input" type="text" id="input-string" placeholder="The string to be converted" v-model="inputString">
         </div>
       </div>
 
       <div class="field">
-        <label class="label is-uppercase">NATO alphabet string</label>
+        <div class="label is-uppercase">NATO alphabet string</div>
       </div>
 
       <div class="field">
@@ -65,14 +65,19 @@
 
     </div>
 
+    <div class="container mt-4">
+      <h2 class="is-size-2 mb-4">NATO Alphabet</h2>
+      <ul>
+        <li class="is-size-5" v-for="(value, key) in map"><strong>{{ key }}</strong>: {{ value }}</li>
+      </ul>
+    </div>
+
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <p>
-          Built by <a href="https://dan.hersam.com">Dan Hersam</a> | <a href="https://github.com/jaden/natoize">Source on GitHub</a>
-        </p>
+        Built by <a href="https://dan.hersam.com">Dan Hersam</a> | <a href="https://github.com/jaden/natoize">Source on GitHub</a>
       </div>
     </div>
   </footer>
@@ -80,7 +85,7 @@
   <script src="assets/js/vue-3.4.20.global.prod.js"></script>
   <script src="assets/js/clipboard-2.0.6.min.js"></script>
   <script src="natoize.js?v=1.1"></script>
-  <script src="app.js?v=1.1"></script>
+  <script src="app.js?v=1.2"></script>
 
 </body>
 </html>

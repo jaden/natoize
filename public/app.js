@@ -1,14 +1,14 @@
-new ClipboardJS('#clipboard-button');
-
 const app = Vue.createApp({
   data() {
     return {
       inputString: 'wtf',
+      map,
     };
   },
 
   mounted: function () {
     this.getStringFromUrl();
+    new ClipboardJS('#clipboard-button');
   },
 
   methods: {
