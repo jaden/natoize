@@ -2,7 +2,7 @@
 
 ![](nato-alphabet-converter.png)
 
-A simple way to make phrases (especially passwords) easier to communicate when spoken by converting all characters on a US keyboard to the NATO phonetic alphabet. I call this conversion process "natoizing".
+A simple way to convert phrases (especially passwords) to the NATO alphabet in order to to tell someone the phrase audibly. It supports all characters on a US keyboard. I call this conversion process "natoizing".
 
 # Usage
 
